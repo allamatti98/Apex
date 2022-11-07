@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Body.css";
 import Header from "./Header";
 import { useStateValue } from "./StateProvider";
 import SongRow from "./SongRow";
@@ -13,7 +12,7 @@ function Body({ spotify }) {
   const playPlaylist = (id) => {
     spotify
       .play({
-        context_uri: `spotify:playlist:37i9dQZEVXcJZyENOWUFo7`,
+        context_uri: `spotify:playlist:37i9dQZF1E39Ipt4UTEVVL`,
       })
       .then((res) => {
         spotify.getMyCurrentPlayingTrack().then((r) => {
