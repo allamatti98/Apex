@@ -5,6 +5,8 @@ import SearchIcon from "@material-ui/icons/Search";
 import LibraryMusicIcon from "@material-ui/icons/LibraryMusic";
 import { getTokenFromResponse } from "./spotify";
 import { useStateValue } from "./StateProvider";
+import logo from './static/img/Apexicon.png';
+import apex from './static/img/sportbg.png';
 
 function Sidebar() {
   const [{ playlists }, dispatch] = useStateValue();
@@ -12,11 +14,10 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
-      <img
-        className="sidebar__logo"
-        src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
-        alt=""
-      />
+        <div style={{marginTop:"10%"}}>
+        <img style={{height:"80px"}} src={logo} alt=""/>
+        <img style={{height:"80px"}} src={apex} alt=""/>
+      </div>
       <SidebarOption Icon={HomeIcon} option="Home" />
       <SidebarOption Icon={SearchIcon} option="Search" />
       <SidebarOption Icon={LibraryMusicIcon} option="Your Library" />

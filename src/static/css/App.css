@@ -205,7 +205,7 @@ body::-webkit-scrollbar {
     padding: 20px;
     border-radius: 99px;
     font-weight: 800;
-    background-color: purple;
+    background-color: #1db954;
   }
   .player {
     display: flex;
