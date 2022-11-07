@@ -1,14 +1,16 @@
 import React from "react";
 import { accessUrl } from "./spotify";
+import logo from './static/img/Apexicon.png';
+import apex from './static/img/sportbg.png';
 
 function Login() {
   return (
     <div className="login">
-      <img
-        src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
-        alt=""
-      />
-      <a href={accessUrl}>LOGIN TO SPOTIFY</a>
+      <div style={{marginTop:"10%"}}>
+        <img style={{height:"90px"}} src={logo} alt=""/>
+        <img style={{height:"90px"}} src={apex} alt=""/>
+      </div>
+      <a href={accessUrl}>Login to Continue</a>
     </div>
   );
 }
